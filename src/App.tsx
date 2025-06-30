@@ -5,18 +5,22 @@ import CreatorAbout from "./pages/CreatorAbout";
 import CreatorCreate from "./pages/CreatorCreate";
 import CreatorListing from "./pages/CreatorListing";
 import CreatorUpdate from "./pages/CreatorUpdate";
-
+import "@picocss/pico/css/pico.min.css";
 function App() {
   return (
-    <>
-      <h1>Creator-verse</h1>
-      <nav>
+    <div>
+      <h1 className="header" >CREATORVERSE</h1>
+      <nav className="nav-container">
         <ul>
-          <li>
-            <Link to="/">View all creators</Link>
+          <li className="nav-link">
+            <Link to="/">
+              <button>View All Creators</button>
+            </Link>
           </li>
-          <li>
-            <Link to="/new">Add a creator</Link>
+          <li className="nav-link">
+            <Link to="/new">
+              <button>View All Creators</button>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -24,7 +28,7 @@ function App() {
         <Route path="/" element={<CreatorListing />} />
         <Route path="/new" element={<CreatorCreate />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
