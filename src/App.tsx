@@ -38,6 +38,7 @@ function App() {
       <Routes>
         <Route path="/" element={<CreatorListing />} />
         <Route path="/new" element={<CreatorCreate />} />
+        <Route path="/about/:id" element={<CreatorAbout />} />
       </Routes>
     </div>
   );

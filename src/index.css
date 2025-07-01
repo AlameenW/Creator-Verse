@@ -8,4 +8,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+a{
+  color: #fff;
+}
+a:hover{
+  color: rgba(var(--bs-link-color-rgb));
+}

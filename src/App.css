@@ -44,5 +44,30 @@ li{
   grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
-  justify-content: space-evenly;
+}
+.about-content{
+  display: flex;
+  text-align: start;
+  justify-content: center;
+  margin: 50px 10px;
+}
+.creator-info{
+  max-width: 40%;
+  margin: 0 20px;
+}
+.creator-socials div a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 0 5px;
+}
+.creator-socials div{
+  margin: 2% 0;
+}
+.creator-socials div a:hover{
+  color: rgba(var(--bs-link-color-rgb));
+}
+.cta .btn{
+  margin: 0 5%;
 }

@@ -1,16 +1,8 @@
 import CreatorCard from "../components/CreatorCard";
 import { supabase } from "../client.ts";
 import { useEffect, useState } from "react";
-interface Creator {
-  id: number;
-  name: string;
-  created_at: Date;
-  description: string;
-  imageURL: string;
-  twitter: string;
-  youtube: string;
-  instagram: string;
-}
+import type { Creator } from "../types/Creator.ts";
+
 const CreatorListing = () => {
   const [creators, setCreators] = useState<Creator[]>([]);
 
@@ -25,17 +17,18 @@ const CreatorListing = () => {
 
     getCreators();
   }, []);
-  useEffect(() => {
-    console.log(creators);
-  }, [creators]);
   return (
     <>
       <div className="creator-container">
         {creators &&
           creators.map((creator) => (
             <CreatorCard
+              id={creator.id}
               name={creator.name}
               description={creator.description}
+              instagram={creator.instagram}
+              twitter={creator.twitter}
+              youtube={creator.youtube}
             />
           ))}
       </div>
