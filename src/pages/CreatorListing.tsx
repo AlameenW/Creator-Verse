@@ -1,5 +1,9 @@
+import CreatorCard from '../components/CreatorCard'
 const CreatorListing = () => {
-  return <>Creator Listing Page</>;
+  return <>
+    Listing
+    <CreatorCard></CreatorCard>
+  </>;
 };
 
 export default CreatorListing;

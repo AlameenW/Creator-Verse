@@ -11,4 +11,31 @@ li{
 .nav-link{
   margin: 0 5px;
 }
-
+.header{
+  min-height: 150px;
+  font-size: 4em;
+}
+.nav-container{
+  display: flex;
+  justify-content: space-around;
+}
+.card-top{
+  display: flex;
+  justify-content: space-between;
+}
+.top-icon{
+  margin: 0 3px;
+}
+.socials{
+  display: flex;
+  justify-content: flex-start;
+}
+.social-icon{
+  margin: 0 5px;
+}
+.socials a{
+  color: #fff;
+}
+.socials a:hover{
+  color: rgba(var(--bs-link-color-rgb));
+}
