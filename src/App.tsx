@@ -9,15 +9,15 @@ import { supabase } from "./client.ts";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
 
-  useEffect(() => {
-    const getCreators = async () => {
-      const { data, error } = await supabase.from("Creators").select();
-      if (error) console.log(error.message);
-      else console.log(data);
-    };
+  // useEffect(() => {
+  //   const getCreators = async () => {
+  //     const { data, error } = await supabase.from("Creators").select();
+  //     if (error) console.log(error.message);
+  //     else console.log(data);
+  //   };
 
-    getCreators();
-  },[])
+  //   getCreators();
+  // },[])
   return (
     <div>
       <h1 className="header">CREATORVERSE</h1>

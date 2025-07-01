@@ -39,3 +39,10 @@ li{
 .socials a:hover{
   color: rgba(var(--bs-link-color-rgb));
 }
+.creator-container{
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+}

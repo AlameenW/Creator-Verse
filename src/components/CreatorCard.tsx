@@ -9,23 +9,27 @@ interface CreatorCardProps {
   description: string;
   imgURL?: string;
 }
-
-const CreatorCard = () => {
+const truncate = (text: string, maxLength: number) => {
+  if (text.length > maxLength)
+    return text.slice(0, maxLength) + "...";
+  else 
+    return text;
+}
+const CreatorCard = ({name, description}:CreatorCardProps) => {
   return (
     <div>
-      <div className="card" style={{ width: "18rem" }}>
+      <div className="card" style={{ width: "18rem", minHeight:'200px' }}>
         {/* <img src="..." className="card-img-top" alt="..." /> */}
         <div className="card-body">
           <div className="card-top">
-            <h5 className="card-title">Card title</h5>
+            <h5 className="card-title">{name}</h5>
             <div className="top-icons">
               <FaInfoCircle size={20} className="top-icon" />
               <MdEdit size={20} className="top-icon" />
             </div>
           </div>
           <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card’s content.
+            {truncate(description, 100)}
           </p>
           <div className="socials">
             <a href="">
