@@ -1,7 +1,7 @@
 import CreatorCard from "../components/CreatorCard";
 import { supabase } from "../client.ts";
 import { useEffect, useState } from "react";
-import type { Creator } from "../types/Creator.ts";
+import type { Creator } from "../types/creator.ts";
 
 const CreatorListing = () => {
   const [creators, setCreators] = useState<Creator[]>([]);
@@ -23,6 +23,7 @@ const CreatorListing = () => {
         {creators &&
           creators.map((creator) => (
             <CreatorCard
+              key={creator.id}
               id={creator.id}
               name={creator.name}
               description={creator.description}
