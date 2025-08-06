@@ -4,7 +4,7 @@ import { FaInfoCircle } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { Link,} from "react-router-dom";
+import { Link } from "react-router-dom";
 import CreatorAbout from "../pages/CreatorAbout";
 interface CreatorCardProps {
   id: number;
@@ -38,8 +38,9 @@ const CreatorCard = ({
               <Link to={`/about/${id}`}>
                 <FaInfoCircle size={20} className="top-icon" />
               </Link>
-
-              <MdEdit size={20} className="top-icon" />
+              <Link to={`/edit/${id}`}>
+                <MdEdit size={20} className="top-icon" />
+              </Link>
             </div>
           </div>
           <p className="card-text">{truncate(description, 100)}</p>

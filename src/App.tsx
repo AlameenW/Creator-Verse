@@ -41,6 +41,7 @@ function App() {
           <Route path="/" element={<CreatorListing />} />
           <Route path="/new" element={<CreatorCreate />} />
           <Route path="/about/:id" element={<CreatorAbout />} />
+          <Route path="/edit/:id" element={<CreatorUpdate/>}/>
         </Routes>
       </div>
     </div>
