@@ -25,7 +25,7 @@ const CreatorAbout = () => {
       const { data, error } = await supabase
         .from("Creators")
         .select("*")
-        .eq("id", id)
+        .eq("id", parseInt(id!))
         .single();
       if (error) console.log({ error });
       else {

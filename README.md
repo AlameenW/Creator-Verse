@@ -29,7 +29,7 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features: [here](https://imgur.com/user/Alameenw/posts)
+Here's a walkthrough of implemented required features: [here](https://imgur.com/gallery/creatorverse-FN4Ruuh)
 
 👉🏿<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 

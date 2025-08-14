@@ -15,7 +15,9 @@ const CreatorCreate = () => {
 
   const handleSubmit = async () => {
     try {
-      const { error } = await supabase.from("Creators").insert(formInput);
+      console.log(`Data to be inserted: ${formInput}`)
+      const { data, error } = await supabase.from("Creators").insert(formInput).select();
+      console.log(`Data inserted: ${data}`)
       if (error) console.log(error);
       navigate('/')
 
